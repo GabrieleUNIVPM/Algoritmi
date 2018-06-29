@@ -1,9 +1,9 @@
-# Relazione di Algoritmi
- e Strutture dati METODI NUMERICI PER IL CALCOLO DI INTEGRALI
+# Relazione di Algoritmi e Strutture dati
+ METODI NUMERICI PER IL CALCOLO DI INTEGRALI
 
-Anno Accademico 2017-2018, Universit‡ Politecnica delle Marche, UNIVPM, Ancona, Italia
+Anno Accademico 2017-2018, Universit√† Politecnica delle Marche, UNIVPM, Ancona, Italia
 
-Analisi di complessit‡ computazionale, tempi di esecuzione,
+Analisi di complessit√† computazionale, tempi di esecuzione,
 errori di arrotondamento, errori di troncamento:
 
 - nel caso di utilizzo di notazione float e double
