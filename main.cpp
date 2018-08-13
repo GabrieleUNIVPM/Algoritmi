@@ -7,6 +7,7 @@
 #include <ctime>
 #include <chrono>
 
+#include "Function.h"
 #include "FloatDoubleDefault.h"
 #include "Rettangoli.h"
 #include "Trapezi.h"
@@ -21,7 +22,7 @@ int main(void){
 	    FloatDoubleDefault();
 		
 		Rettangoli();
-		//Trapezi();
+		Trapezi();
 		Simpson();
 
 	return (0);

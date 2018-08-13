@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <chrono>
 
-#include "Function.h"
 
 using namespace std;
 

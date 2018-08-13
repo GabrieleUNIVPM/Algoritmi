@@ -1,13 +1,11 @@
 #include <iostream>
 #include <math.h>
 
-#include "Function.h"
-
 using namespace std;
 
 
 
-void Simpson(/*funzione da integrare*/){
+void Simpson(){
 	
 	
 	cout<<"\n\nIn esecuzione integrazione con IL METODO DI SIMPSON\n "<<endl;
@@ -46,9 +44,3 @@ do {
  cout<<"\n L'integrale della funzione vale\t "<<somma;
 
  }
-
-
-
-	
-	
-}
