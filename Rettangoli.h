@@ -11,13 +11,15 @@ using namespace std;
 
 
 
-void Somma(double h ,double a,int n){
+void SommaRet(double h ,double a,int n){
 
 double somma;
 
- for (int i=0; i<n; i++){
- somma +=f(a + i*h) ; //Calcolo di f ( x ) e somma all'area
- somma *= h;
+ for (int i=0; i<n; i++)
+ 
+ 	{
+ 	somma +=f(a + i*h) ; //Calcolo di f ( x ) e somma all'area
+ 	somma *= h;
  
 	cout<<"\n Numero di intervalli utilizzati : \t"<<i+1;
 	
@@ -26,7 +28,8 @@ double somma;
 	 
 	else
 	 cout<<"\n Somma totale : \t"<<somma;
-	}
+	 
+ 	}
 
 }
 
@@ -53,13 +56,13 @@ int n ;
  cin>>n ;
  
  h=(b-a)/n ;		//ampiezza degli intervalli
- cout<<"\n Ampiezza di ciascun intervallo: \t"<<h;
+ cout<<"\n Ampiezza di ciascun intervallo, calcolata tramite la formula h=(b-a)/n: \t"<<h;
  
  	 //get the start time
      	auto start_I = std::chrono::steady_clock::now();
    	
    	 //run some code
-		Somma(h,a,n);
+		SommaRet(h,a,n);
 
     	//get the end time
      auto end_I = std::chrono::steady_clock::now();
@@ -69,8 +72,6 @@ int n ;
 
      //output
      std::cout <<"\nElapsed Time (s): \t" << I_elapsed_time_ns / 1e9 << std::endl;
- 
- 
  
  }
 

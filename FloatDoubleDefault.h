@@ -35,9 +35,15 @@ void FloatDoubleDefault(){
 	printDouble ();
 	
 	cout.precision(16);
-	cout<<"\n\nRappresentazione a 16 cifre significative di Float"<<endl;
+	cout<<"\n\nRappresentazione di prova a 16 cifre significative di Float"<<endl;
 	printFloat ();
 	cout<<"\nRappresentazione a 16 cifre significative di Double"<<endl;
 	printDouble ();
+	
+	/*cout.precision(32);
+	cout<<"\n\nRappresentazione di prova a 16 cifre significative di Float"<<endl;
+	printFloat ();
+	cout<<"\nRappresentazione di prova a 16 cifre significative di Double"<<endl;
+	printDouble ();*/
 	
 }
