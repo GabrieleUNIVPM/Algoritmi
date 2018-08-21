@@ -32,19 +32,21 @@ void Trapezi()
  
  
  
- cout<< "Numero di intervalli\t ";
+ cout<< "\nNumero di intervalli\t ";
  cin>>n ;
  
  h=(b-a)/n ;		//ampiezza degli intervalli
  
  
- somma=( f ( a )+f (b) )*0.5 ; /*Valore approssimato dell'integrale*/
+ somma=( f(a)+f(b) )*0.5 ; /*Valore approssimato dell'integrale*/
  
  
  for (int i=1; i<n; i++)
+ {
+ 	somma += f (a+ i*h) ; /* Calcolo di f ( x ) e somma all'area */
+ 	somma *= h;
+ }
  
- somma += f (a+ i*h) ; /* Calcolo di f ( x ) e somma all'area */
- somma *= h;
  
  
  cout<<"L' integrale vale \t"<<somma;

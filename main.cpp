@@ -19,8 +19,7 @@ fstream stream;
 
 int main(void){
 
-	    FloatDoubleDefault();
-		
+		FloatDoubleDefault();
 		Rettangoli();
 		Trapezi();
 		Simpson();

@@ -11,17 +11,23 @@ using namespace std;
 
 
 
-double Somma(double h ,double a,int n){
+void Somma(double h ,double a,int n){
 
 double somma;
 
  for (int i=0; i<n; i++){
- somma += f(a + i*h) ; //Calcolo di f ( x ) e somma all'area
+ somma +=f(a + i*h) ; //Calcolo di f ( x ) e somma all'area
  somma *= h;
+ 
+	cout<<"\n Numero di intervalli utilizzati : \t"<<i+1;
 	
+ 	if(i+1<n)
+	 cout<<"\n Somma parziale : \t"<<somma;
+	 
+	else
+	 cout<<"\n Somma totale : \t"<<somma;
 	}
-	
-	return somma;
+
 }
 
 
@@ -47,7 +53,7 @@ int n ;
  cin>>n ;
  
  h=(b-a)/n ;		//ampiezza degli intervalli
- 
+ cout<<"\n Ampiezza di ciascun intervallo: \t"<<h;
  
  	 //get the start time
      	auto start_I = std::chrono::steady_clock::now();
@@ -64,8 +70,7 @@ int n ;
      //output
      std::cout <<"\nElapsed Time (s): \t" << I_elapsed_time_ns / 1e9 << std::endl;
  
- somma=Somma(h,a,n);
-  cout<<"L' integrale vale \t"<<somma;
+ 
  
  }
 

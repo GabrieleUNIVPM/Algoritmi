@@ -26,7 +26,7 @@ do {
  
  } while ( a >= b) ;
  
- cout<< "Numero di intervalli\t ";
+ cout<< "\nNumero di intervalli\t ";
  cin>>n ;
  
  h=(b-a)/n ;		//ampiezza degli intervalli
