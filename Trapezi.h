@@ -17,13 +17,13 @@ using namespace std;
  	somma += f (a+ i*h) ; /* Calcolo di f ( x ) e somma all'area */
  	somma *= h;
  	
- 	cout<<"\n Numero di intervalli utilizzati : \t"<<i;
+ 	cout<<"\n Numero di intervalli esaminati : \t"<<i;
 	
- 	if(i==n)
-	 cout<<"\n Somma totale : \t"<<somma;
+ 	if(i!=n)
+	 cout<<"\n Somma parziale : \t"<<somma;
 	 
 	else
-	 cout<<"\n Somma parziale : \t"<<somma;
+	 cout<<"\n Somma totale : \t"<<somma;
 	 
  	}
 
@@ -35,36 +35,14 @@ using namespace std;
 
 
 
-void Trapezi()
+void Trapezi(double h,double a,double b,int n)
 
 {
 	
 	cout<<"\n\nIn esecuzione integrazione con IL METODO DEI TRAPEZI\n "<<endl;
 	
- double h , a , b ,sommaproxT;
- int n ;
+ double sommaproxT;
 
-
- 
- 
- do {
- cout<<"\n Limite inferiore d'integrazione : ";
- cin>>a;
- cout<<"\n Limite superiore d'integrazione : ";
- cin>>b ;
- 
- if (a>=b)
- cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";
- 
- } while ( a >= b) ;
- 
- 
- 
- cout<< "\nNumero di intervalli\t ";
- cin>>n ;
- 
- h=(b-a)/n ;		//ampiezza degli intervalli
- cout<<"\n Ampiezza di ciascun intervallo, calcolata tramite la formula h=(b-a)/n: \t"<<h;
  
  sommaproxT=( f(a)+f(b) )*0.5 ; //Valore approssimato dell'integrale
  cout<<"\n Valore approssimato dell'integrale tramite la formula ( f(a)+f(b) )*0.5: \t"<<sommaproxT;

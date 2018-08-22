@@ -34,31 +34,11 @@ double somma;
 }
 
 
-void Rettangoli(){
+void Rettangoli(double h,double a,double b,int n){
 	
-cout<<"\n\nIn esecuzione integrazione con IL METODO DEI RETTANGOLI\n "<<endl;
+cout<<"\n\nIn esecuzione integrazione con IL METODO DEI RETTANGOLI a 6 cifre significative\n "<<endl;
 	
-double h , a , b ,somma;
-int n ;
- 
- do {
- cout<<"\n Limite inferiore d'integrazione : ";
- cin>>a;
- cout<<"\n Limite superiore d'integrazione : ";
- cin>>b ;
- 
- if (a>=b)
- cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";
- 
- } while ( a >= b) ;
- 
- cout<< "Numero di intervalli\t ";
- cin>>n ;
- 
- h=(b-a)/n ;		//ampiezza degli intervalli
- cout<<"\n Ampiezza di ciascun intervallo, calcolata tramite la formula h=(b-a)/n: \t"<<h;
- 
- 	 //get the start time
+	 //get the start time
      	auto start_I = std::chrono::steady_clock::now();
    	
    	 //run some code
