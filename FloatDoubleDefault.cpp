@@ -5,6 +5,7 @@
 #include <fstream>
 #include <stdlib.h>
 
+#include "Header.h"
 
 using namespace std;
 
@@ -33,7 +34,5 @@ void FloatDoubleDefault(int j){
 	printFloat ();
 	cout<<"\nRappresentazione a "<<j<<" cifre significative di Double"<<endl;
 	printDouble ();
-	
-	
 	
 }

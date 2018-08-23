@@ -4,6 +4,9 @@
 #include <iostream>
 #include <fstream>
 #include <stdlib.h>
+#include <chrono>
+
+#include "Header.h"
 
 using namespace std;
 
@@ -39,7 +42,6 @@ void Trapezi(double h,double a,double b,int n)
 
 {
 	
-	cout<<"\n\nIn esecuzione integrazione con IL METODO DEI TRAPEZI\n "<<endl;
 	
  double sommaproxT;
 

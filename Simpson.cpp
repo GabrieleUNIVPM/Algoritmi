@@ -1,5 +1,9 @@
 #include <iostream>
 #include <math.h>
+#include <chrono>
+
+#include "Header.h"
+
 
 using namespace std;
 
@@ -14,9 +18,6 @@ using namespace std;
  
  for (i=1; i<n; i+=2) 
  sum4 += f(a + i*h) ; // Calcolo di f ( x ) e somma a sum4
- 
- 
- //cout<<"\n "<<i<<"° iterazione:"; ***LINEA PROBABILMENTE DA CANCELLARE***
  
   
  
@@ -37,35 +38,15 @@ using namespace std;
 
 
 
-void Simpson(){
-	
-	
-	cout<<"\n\nIn esecuzione integrazione con IL METODO DI SIMPSON\n "<<endl;
-	
+void Simpson(double h,double a,double b,int n){
 	
 
- double h , a , b, sommaproxS;
- int n ;
+ double sommaproxS;
  
-do {
- cout<<"\n Limite inferiore d'integrazione : ";
- cin>>a;
- cout<<"\n Limite superiore d'integrazione : ";
- cin>>b ;
- 
- if (a>=b)
- cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";
- 
- } while ( a >= b) ;
- 
- cout<< "\nNumero di intervalli\t ";
- cin>>n ;
- 
- h=(b-a)/n ;		//ampiezza degli intervalli
- cout<<"\n Ampiezza di ciascun intervallo, calcolata tramite la formula h=(b-a)/n: \t"<<h;
+
 
 sommaproxS = f (a) + f (b) ;
-cout<<"\n Valore dell'integrale utilizzando la formula approssimata f (a) + f (b) : \n";
+cout<<"\n Valore dell'integrale utilizzando la formula approssimata f (a) + f (b) : "<<sommaproxS;
 
  cout<<"\n Valore dell'integrale utilizzando il metodo di Simpson: \n";
  

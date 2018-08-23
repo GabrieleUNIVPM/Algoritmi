@@ -7,15 +7,16 @@
 #include <ctime>
 #include <chrono>
 
-#include "Function.h"
+
+#include "Header.h"
+/*#include "Function.h"
 #include "FloatDoubleDefault.h"
 #include "Rettangoli.h"
 #include "Trapezi.h"
-#include "Simpson.h"
+#include "Simpson.h"*/
 
 
 using namespace std;
-fstream stream;
 
 int main(void){
 
@@ -53,10 +54,14 @@ int main(void){
  		h=(b-a)/n ;		//ampiezza degli intervalli
  		cout<<"\n Ampiezza di ciascun intervallo, calcolata tramite la formula h=(b-a)/n: \t"<<h;
 		
-		
+		cout<<"\n\nIn esecuzione integrazione con IL METODO DEI RETTANGOLI a "<<j<<" cifre significative\n "<<endl;
 		Rettangoli(h,a,b,n);
+		
+		cout<<"\n\nIn esecuzione integrazione con IL METODO DEI TRAPEZI a "<<j<<" cifre significative\n "<<endl;
 		Trapezi(h,a,b,n);
-		//Simpson(h,a,b,n);
+		
+		cout<<"\n\nIn esecuzione integrazione con IL METODO DI SIMPSON a "<<j<<" cifre significative\n "<<endl;
+		Simpson(h,a,b,n);
 		
 	}	
 		

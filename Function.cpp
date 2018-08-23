@@ -8,5 +8,3 @@ using namespace std;
  	{
  	return exp ( sin (pow(x,2)/10) ) ;
  	}
-
-

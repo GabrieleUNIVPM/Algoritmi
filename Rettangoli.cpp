@@ -6,10 +6,9 @@
 #include <stdlib.h>
 #include <chrono>
 
+#include "Header.h"
 
 using namespace std;
-
-
 
 void SommaRet(double h ,double a,int n){
 
@@ -36,7 +35,7 @@ double somma;
 
 void Rettangoli(double h,double a,double b,int n){
 	
-cout<<"\n\nIn esecuzione integrazione con IL METODO DEI RETTANGOLI a 6 cifre significative\n "<<endl;
+
 	
 	 //get the start time
      	auto start_I = std::chrono::steady_clock::now();
@@ -54,7 +53,3 @@ cout<<"\n\nIn esecuzione integrazione con IL METODO DEI RETTANGOLI a 6 cifre sig
      std::cout <<"\nElapsed Time (s): \t" << I_elapsed_time_ns / 1e9 << std::endl;
  
  }
-
-
-
-

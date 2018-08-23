@@ -1,0 +1,7 @@
+#Files to be ignored are the ones made out of compilations
+
+*.o
+*.Win
+*.win
+*.exe
+*.layout
