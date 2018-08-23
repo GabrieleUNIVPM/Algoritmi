@@ -9,11 +9,6 @@
 
 
 #include "Header.h"
-/*#include "Function.h"
-#include "FloatDoubleDefault.h"
-#include "Rettangoli.h"
-#include "Trapezi.h"
-#include "Simpson.h"*/
 
 
 using namespace std;
