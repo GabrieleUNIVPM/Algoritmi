@@ -10,15 +10,15 @@
 
 using namespace std;
 
-void SommaRet(double h ,double a,int n){
+void SommaRet(double h ,double a,double n){
 
 double somma;
 
  for (int i=0; i<n; i++)
  
  	{
- 	somma +=f(a + i*h) ; //Calcolo di f ( x ) e somma all'area
- 	somma *= h;
+ 	somma +=h* (f (a+ i*h)) ; //Calcolo di f ( x ) e somma all'area
+ 	
  
 	cout<<"\n Numero di intervalli utilizzati : \t"<<i+1;
 	
@@ -33,7 +33,7 @@ double somma;
 }
 
 
-void Rettangoli(double h,double a,double b,int n){
+void Rettangoli(double h,double a,double b,double n){
 	
 
 	

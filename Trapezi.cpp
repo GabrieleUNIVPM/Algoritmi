@@ -11,14 +11,14 @@
 using namespace std;
 
 
- void SommaTrap(double h, double a, int n){
+ void SommaTrap(double h, double a, double n){
  
  double somma;
  
  for (int i=1; i<=n; i++)
  {
- 	somma += f (a+ i*h) ; /* Calcolo di f ( x ) e somma all'area */
- 	somma *= h;
+ 	somma += h* (f (a+ i*h)) ; /* Calcolo di f ( x ) e somma all'area */
+ 	
  	
  	cout<<"\n Numero di intervalli esaminati : \t"<<i;
 	
@@ -38,7 +38,7 @@ using namespace std;
 
 
 
-void Trapezi(double h,double a,double b,int n)
+void Trapezi(double h,double a,double b,double n)
 
 {
 	

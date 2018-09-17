@@ -11,7 +11,7 @@ using namespace std;
 
  
  
-  void SommaSimp(double h, double a, int n){
+  void SommaSimp(double h, double a, double n){
  
  double somma, sum4=0.0 ,sum2=0.0;
  int i;
@@ -38,7 +38,7 @@ using namespace std;
 
 
 
-void Simpson(double h,double a,double b,int n){
+void Simpson(double h,double a,double b,double n){
 	
 
  double sommaproxS;
