@@ -14,11 +14,14 @@ void printByteSizes ();
 
 void FloatDoubleDefault(int j);
 
-void Rettangoli(double h,double a,double b,double n);
+void RettangoliFloat(float h,float a,float b,float n);
+void RettangoliDouble(double h,double a,double b,double n);
 //void SommaRet(double h ,double a,int n);
 
-void Trapezi(double h,double a,double b,double n);
+void TrapeziFloat(float h,float a,float b,float n);
+void TrapeziDouble(double h,double a,double b,double n);
 //void SommaTrap(double h, double a, int n);
 
-void Simpson(double h,double a,double b,double n);
+void SimpsonFloat(float h,float a,float b,float n);
+void SimpsonDouble(double h,double a,double b,double n);
 //void SommaSimp(double h, double a, int n);

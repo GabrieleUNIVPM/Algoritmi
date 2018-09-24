@@ -32,7 +32,7 @@ void FloatDoubleDefault(int j){
 	
 	cout<<"\n\nRappresentazione di prova a "<<j<<" cifre significative di Float"<<endl;
 	printFloat ();
-	cout<<"\nRappresentazione a "<<j<<" cifre significative di Double"<<endl;
+	cout<<"\nRappresentazione di prova a "<<j<<" cifre significative di Double"<<endl;
 	printDouble ();
 	
 }
