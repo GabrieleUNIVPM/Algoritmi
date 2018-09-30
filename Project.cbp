@@ -18,7 +18,6 @@
 		<Unit filename="FloatDoubleDefault.cpp" />
 		<Unit filename="Function.cpp" />
 		<Unit filename="Header.h" />
-		<Unit filename="Retangoli.cpp" />
 		<Unit filename="Rettangoli.cpp" />
 		<Unit filename="Simpson.cpp" />
 		<Unit filename="Trapezi.cpp" />

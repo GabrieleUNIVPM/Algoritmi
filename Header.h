@@ -22,6 +22,6 @@ void TrapeziFloat(float h,float a,float b,float n);
 void TrapeziDouble(double h,double a,double b,double n);
 //void SommaTrap(double h, double a, int n);
 
-void SimpsonFloat(float h,float a,float b,float n);
-void SimpsonDouble(double h,double a,double b,double n);
+void SimpsonFloat(float h,float a,float b,float nSimp);
+void SimpsonDouble(double h,double a,double b,double nSimp);
 //void SommaSimp(double h, double a, int n);
