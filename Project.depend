@@ -16,7 +16,7 @@
 
 1535043515 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\retangoli.cpp
 
-1538305355 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\main.cpp
+1538305808 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\main.cpp
 	<iostream>
 	<string>
 	<math.h>
@@ -37,7 +37,7 @@
 	<chrono>
 	"Header.h"
 
-1538305505 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\simpson.cpp
+1538408482 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\simpson.cpp
 	<iostream>
 	<math.h>
 	<chrono>
