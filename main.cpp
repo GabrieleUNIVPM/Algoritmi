@@ -43,11 +43,15 @@ int main(void){
  				cin>>a;
  				cout<<"\n Limite superiore d'integrazione : ";
  				cin>>b ;
- 				} while ( a >= b) ;
-
 
  				if (a>=b)
  				cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";
+
+ 				} while ( a >= b) ;
+
+
+ 				/*if (a>=b)
+ 				cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";*/
 
  				cout<< "\nNumero di intervalli per il metodo dei Rettangoli e dei Trapezi\t ";
                 cin>>n ;
@@ -103,11 +107,15 @@ int main(void){
  				cin>>a;
  				cout<<"\n Limite superiore d'integrazione : ";
  				cin>>b ;
- 				} while ( a >= b) ;
-
 
  				if (a>=b)
  				cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";
+
+ 				} while ( a >= b) ;
+
+
+ 				/*if (a>=b)
+ 				cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";*/
 
  				cout<< "\nNumero di intervalli per il metodo dei Rettangoli e dei Trapezi\t ";
                 cin>>n ;

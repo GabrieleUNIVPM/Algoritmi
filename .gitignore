@@ -5,3 +5,4 @@
 *.win
 *.exe
 *.layout
+*.depend
