@@ -2,6 +2,7 @@
 #include <math.h>
 #include <chrono>
 
+
 #include "Header.h"
 
 
@@ -79,14 +80,9 @@ void SimpsonFloat(float h,float a,float b,float nSimp){
         auto end_I = std::chrono::steady_clock::now();
 
 
-     /*
+
      //find the difference
      double I_elapsed_time_ns = double(std::chrono::duration_cast <std::chrono::nanoseconds> (end_I - start_I).count());
-    */
-
-
-     //find the difference
-        double I_elapsed_time_ns = double(std::chrono::duration_cast <std::chrono::nanoseconds> (end_I - start_I).count());
 
 
      //output
@@ -103,7 +99,7 @@ void SimpsonDouble(double h,double a,double b,double nSimp){
 
  cout<<"\n Valore dell'integrale utilizzando il metodo di Simpson: \n";
 
-  //get the start time
+//get the start time
      	auto start_I = std::chrono::steady_clock::now();
 
    	 //run some code

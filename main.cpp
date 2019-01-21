@@ -4,7 +4,6 @@
 #include <iostream>
 #include <fstream>
 #include <stdlib.h>
-#include <ctime>
 #include <chrono>
 
 
@@ -49,10 +48,6 @@ int main(void){
 
  				} while ( a >= b) ;
 
-
- 				/*if (a>=b)
- 				cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";*/
-
  				cout<< "\nNumero di intervalli per il metodo dei Rettangoli e dei Trapezi\t ";
                 cin>>n ;
 
@@ -70,10 +65,10 @@ int main(void){
                 } while ( fmod(nSimp,due)/*nSimp%due*/ != 0 ) ;
 
  			h=(b-a)/n ;		//ampiezza degli intervalli
- 			cout<<"\n Ampiezza di ciascun intervallo, calcolata tramite la formula h=(b-a)/n: \t"<<h;
+ 			cout<<"\n Ampiezza di ciascun intervallo per il metodo dei Rettangoli e dei Trapezi, calcolata tramite la formula h=(b-a)/n: \t"<<h;
 
  			hSimp=(b-a)/nSimp ;		//ampiezza degli intervalli
- 			cout<<"\n Ampiezza di ciascun intervallo, calcolata tramite la formula h=(b-a)/n: \t"<<h;
+ 			cout<<"\n Ampiezza di ciascun intervallo per il metodo di Simpson, calcolata tramite la formula h=(b-a)/n: \t"<<h;
 
 
  			cout<<"\n\nIn esecuzione integrazione con IL METODO DEI RETTANGOLI a "<<j<<" cifre significative\n "<<endl;
@@ -134,10 +129,10 @@ int main(void){
                 } while ( fmod(nSimp,due)/*nSimp%due*/ != 0 ) ;
 
  			h=(b-a)/n ;		//ampiezza degli intervalli
- 			cout<<"\n Ampiezza di ciascun intervallo, calcolata tramite la formula h=(b-a)/n: \t"<<h;
+ 			cout<<"\n Ampiezza di ciascun intervallo per il metodo dei Rettangoli e dei Trapezi, calcolata tramite la formula h=(b-a)/n: \t"<<h;
 
  			hSimp=(b-a)/nSimp ;		//ampiezza degli intervalli
- 			cout<<"\n Ampiezza di ciascun intervallo, calcolata tramite la formula h=(b-a)/n: \t"<<h;
+ 			cout<<"\n Ampiezza di ciascun intervallo per il metodo di Simpson, calcolata tramite la formula h=(b-a)/n: \t"<<h;
 
 
 

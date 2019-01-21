@@ -58,8 +58,6 @@ double somma;
 
 void RettangoliFloat(float h,float a,float b,float n){
 
-
-
 	 //get the start time
      	auto start_I = std::chrono::steady_clock::now();
 
@@ -74,6 +72,7 @@ void RettangoliFloat(float h,float a,float b,float n){
 
      //output
      cout <<"\nTempo impiegato per il calcolo [s]: \t" << I_elapsed_time_ns / 1e9 << endl;
+
 
  }
 

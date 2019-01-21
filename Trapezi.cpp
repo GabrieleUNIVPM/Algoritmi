@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <chrono>
 
+
 #include "Header.h"
 
 using namespace std;
@@ -72,7 +73,7 @@ void TrapeziFloat(float h,float a,float b,float n)
 
  cout<<"\n Valore dell'integrale utilizzando il metodo dei Trapezi: \n";
 
-  //get the start time
+ //get the start time
      	auto start_I = std::chrono::steady_clock::now();
 
    	 //run some code
@@ -86,6 +87,7 @@ void TrapeziFloat(float h,float a,float b,float n)
 
      //output
      cout <<"\n Tempo impiegato per il calcolo [s]: \t" << I_elapsed_time_ns / 1e9 << endl;
+
 
 }
 
