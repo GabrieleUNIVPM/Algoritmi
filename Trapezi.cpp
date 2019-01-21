@@ -85,7 +85,7 @@ void TrapeziFloat(float h,float a,float b,float n)
      double I_elapsed_time_ns = double(std::chrono::duration_cast <std::chrono::nanoseconds> (end_I - start_I).count());
 
      //output
-     std::cout <<"\n Tempo impiegato per il calcolo [s]: \t" << I_elapsed_time_ns / 1e9 << std::endl;
+     cout <<"\n Tempo impiegato per il calcolo [s]: \t" << I_elapsed_time_ns / 1e9 << endl;
 
 }
 
@@ -121,7 +121,7 @@ void TrapeziDouble(double h,double a,double b,double n)
      double I_elapsed_time_ns = double(std::chrono::duration_cast <std::chrono::nanoseconds> (end_I - start_I).count());
 
      //output
-     std::cout <<"\n Tempo impiegato per il calcolo [s]: \t" << I_elapsed_time_ns / 1e9 << std::endl;
+     cout <<"\n Tempo impiegato per il calcolo [s]: \t" << I_elapsed_time_ns / 1e9 << endl;
 
 }
 
