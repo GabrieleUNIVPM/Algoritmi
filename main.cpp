@@ -1,11 +1,6 @@
 #include <iostream>
-#include <string>
 #include <math.h>
-#include <iostream>
-#include <fstream>
-#include <stdlib.h>
 #include <chrono>
-
 
 #include "Header.h"
 
@@ -22,31 +17,35 @@ int main(void){
 
 		for(int i=0;i<2;i++){
 
-		if(i==0)
-		{
+            if(i==0)
+            {
 
-			j=6;
+                j=6;
 
-            cout<<"\n\n-------------------------------------------------------------------";
-			cout<<"\n\n\t\tUso della NOTAZIONE FLOAT : ";
+                cout<<"\n\n-------------------------------------------------------------------";
+                cout<<"\n\n\t\tUso della NOTAZIONE FLOAT : ";
 
-			FloatDoubleDefault(j);
+                FloatDoubleDefault(j);
 
-			float a , b , somma, n,
-			nSimp /*Numero di intervalli per Simpson, obbligatoriamente pari*/,
-			h ,
-			hSimp /*Ampiezza degli intervalli per il calcolo con Simpson*/;
+                float a , b , somma, n,
+                nSimp /*Numero di intervalli per Simpson, obbligatoriamente pari*/,
+                h ,
+                hSimp /*Ampiezza degli intervalli per il calcolo con Simpson*/;
+
+                cout<<"\n\n-------------------------------------------------------------------";
 
 				do {
- 				cout<<"\n Limite inferiore d'integrazione : ";
- 				cin>>a;
- 				cout<<"\n Limite superiore d'integrazione : ";
- 				cin>>b ;
+                    cout<<"\n Limite inferiore d'integrazione : ";
+                    cin>>a;
+                    cout<<"\n Limite superiore d'integrazione : ";
+                    cin>>b ;
 
- 				if (a>=b)
- 				cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";
+                    if (a>=b)
+                    cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";
 
  				} while ( a >= b) ;
+
+
 
  				cout<< "\nNumero di intervalli per il metodo dei Rettangoli e dei Trapezi\t ";
                 cin>>n ;
@@ -55,14 +54,15 @@ int main(void){
 
  				do {
 
-                cout<< "\nNumero di intervalli per Simpson, obbligatoriamente pari\t ";
-                cin>>nSimp ;
+                    cout<< "\nNumero di intervalli per Simpson, obbligatoriamente pari\t ";
+                    cin>>nSimp ;
 
- 				if ( fmod(nSimp,due)/*nSimp%due*/ != 0 )
-                cout<< "\nIl numero di intervalli di integrazione per il metodo di Simpson deve essere obbligatoriamente pari, RIPROVARE:\t ";
+                    if ( fmod(nSimp,due)/*nSimp%due*/ != 0 )
+                        cout<< "\nIl numero di intervalli di integrazione per il metodo di Simpson deve essere obbligatoriamente pari, RIPROVARE:\t ";
 
 
                 } while ( fmod(nSimp,due)/*nSimp%due*/ != 0 ) ;
+
 
  			h=(b-a)/n ;		//ampiezza degli intervalli
  			cout<<"\n Ampiezza di ciascun intervallo per il metodo dei Rettangoli e dei Trapezi, calcolata tramite la formula h=(b-a)/n: \t"<<h;
@@ -85,34 +85,35 @@ int main(void){
 		}
 
 
-		else if(i==1)
-		{
-			j=16;
+            else if(i==1)
+            {
+                j=16;
 
-            cout<<"\n\n-------------------------------------------------------------------";
-			cout<<"\n\n\t\tUso della NOTAZIONE DOUBLE : ";
+                cout<<"\n\n-------------------------------------------------------------------";
+                cout<<"\n\n\t\tUso della NOTAZIONE DOUBLE : ";
 
-			FloatDoubleDefault(j);
+                FloatDoubleDefault(j);
 
-			double a , b , somma, n,
-			nSimp /*Numero di intervalli per Simpson, obbligatoriamente pari*/,
-			h ,
-			hSimp /*Ampiezza degli intervalli per il calcolo con Simpson*/;
+                double a , b , somma, n,
+                nSimp /*Numero di intervalli per Simpson, obbligatoriamente pari*/,
+                h ,
+                hSimp /*Ampiezza degli intervalli per il calcolo con Simpson*/;
+
+                cout<<"\n\n-------------------------------------------------------------------";
+
 
 				do {
- 				cout<<"\n Limite inferiore d'integrazione : ";
- 				cin>>a;
- 				cout<<"\n Limite superiore d'integrazione : ";
- 				cin>>b ;
+                    cout<<"\n Limite inferiore d'integrazione : ";
+                    cin>>a;
+                    cout<<"\n Limite superiore d'integrazione : ";
+                    cin>>b ;
 
- 				if (a>=b)
- 				cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";
+                    if (a>=b)
+                        cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";
 
  				} while ( a >= b) ;
 
 
- 				/*if (a>=b)
- 				cout<<"\n Errore: a deve essere minore di b, RIPROVARE: ";*/
 
  				cout<< "\nNumero di intervalli per il metodo dei Rettangoli e dei Trapezi\t ";
                 cin>>n ;
@@ -121,11 +122,11 @@ int main(void){
 
  				do {
 
-                cout<< "\nNumero di intervalli per Simpson, obbligatoriamente pari\t ";
-                cin>>nSimp ;
+                    cout<< "\nNumero di intervalli per Simpson, obbligatoriamente pari\t ";
+                    cin>>nSimp ;
 
- 				if ( fmod(nSimp,due)/*nSimp%due*/ != 0 )
-                cout<< "\n\nIl numero di intervalli di integrazione per il metodo di Simpson deve essere obbligatoriamente pari, RIPROVARE:\t ";
+                    if ( fmod(nSimp,due)/*nSimp%due*/ != 0 )
+                        cout<< "\n\nIl numero di intervalli di integrazione per il metodo di Simpson deve essere obbligatoriamente pari, RIPROVARE:\t ";
 
 
                 } while ( fmod(nSimp,due)/*nSimp%due*/ != 0 ) ;

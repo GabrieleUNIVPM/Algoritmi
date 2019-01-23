@@ -8,7 +8,7 @@
 	<stdlib.h>
 	"Header.h"
 
-1538301887 c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\header.h
+1548234392 c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\header.h
 
 1535039090 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\function.cpp
 	<iostream>
@@ -16,7 +16,13 @@
 
 1535043515 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\retangoli.cpp
 
-1548067027 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\main.cpp
+1548234511 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\main.cpp
+	<iostream>
+	<math.h>
+	<chrono>
+	"Header.h"
+
+1548233418 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\rettangoli.cpp
 	<iostream>
 	<string>
 	<math.h>
@@ -26,29 +32,15 @@
 	<chrono>
 	"Header.h"
 
-1548232510 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\rettangoli.cpp
-	<iostream>
-	<string>
-	<math.h>
-	<iostream>
-	<fstream>
-	<stdlib.h>
-	<chrono>
-	"Header.h"
-
-1548232379 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\simpson.cpp
+1548234511 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\simpson.cpp
 	<iostream>
 	<math.h>
 	<chrono>
 	"Header.h"
 
-1548232330 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\trapezi.cpp
+1548234511 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\trapezi.cpp
 	<iostream>
-	<string>
 	<math.h>
-	<iostream>
-	<fstream>
-	<stdlib.h>
 	<chrono>
 	"Header.h"
 

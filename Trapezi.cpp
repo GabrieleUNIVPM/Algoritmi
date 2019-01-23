@@ -1,11 +1,6 @@
 #include <iostream>
-#include <string>
 #include <math.h>
-#include <iostream>
-#include <fstream>
-#include <stdlib.h>
 #include <chrono>
-
 
 #include "Header.h"
 
@@ -13,48 +8,36 @@ using namespace std;
 
 
 
-void SommaTrapFloat(float h, float a, float n){
+    void SommaTrapFloat(float h, float a, float n)
+    {
 
- float somma=0;
+        float somma=0;
 
-for (int i=0; i<=n-1 ; i++){
-
- 	somma += h/2* (f (a+ i*h)+f(a+(i+1)*h)) ; // Calcolo di f ( x ) e somma all'area
-
- 	}
-cout<<"\n Somma totale : \t"<<somma;
- }
+        for (int i=0; i<=n-1 ; i++)
+            somma += h/2* (f (a+ i*h)+f(a+(i+1)*h)) ; // Calcolo di f ( x ) e somma all'area
 
 
+        cout<<"\n Somma totale : \t"<<somma;
+
+    }
 
 
- void SommaTrapDouble(double h, double a, double n){
+    void SommaTrapDouble(double h, double a, double n)
+    {
 
- double somma=0;
+    double somma=0;
 
- for (int i=0; i<=n-1 ; i++){
+    for (int i=0; i<=n-1 ; i++)
+        somma += h/2* (f (a+ i*h)+f(a+(i+1)*h)) ; // Calcolo di f ( x ) e somma all'area
 
- 	somma += h/2* (f (a+ i*h)+f(a+(i+1)*h)) ; // Calcolo di f ( x ) e somma all'area
+    cout<<"\n Somma totale : \t"<<somma;
 
- 	}
-
-cout<<"\n Somma totale : \t"<<somma;
- }
+    }
 
 
 void TrapeziFloat(float h,float a,float b,float n)
+    {
 
-{
-
-
- float sommaproxT;
-
-
- sommaproxT=( f(a)+f(b) )*0.5 ; //Valore approssimato dell'integrale
- cout<<"\n Valore approssimato dell'integrale tramite la formula ( f(a)+f(b) )*0.5: \t"<<sommaproxT;
-
-
- cout<<"\n Valore dell'integrale utilizzando il metodo dei Trapezi: \n";
 
  //get the start time
      	auto start_I = std::chrono::steady_clock::now();
@@ -71,8 +54,7 @@ void TrapeziFloat(float h,float a,float b,float n)
      //output
      cout <<"\n Tempo impiegato per il calcolo [s]: \t" << I_elapsed_time_ns / 1e9 << endl;
 
-
-}
+    }
 
 
 
@@ -80,18 +62,8 @@ void TrapeziFloat(float h,float a,float b,float n)
 
 
 void TrapeziDouble(double h,double a,double b,double n)
+    {
 
-{
-
-
- double sommaproxT;
-
-
- sommaproxT=( f(a)+f(b) )*0.5 ; //Valore approssimato dell'integrale
- cout<<"\n Valore approssimato dell'integrale tramite la formula ( f(a)+f(b) )*0.5: \t"<<sommaproxT;
-
-
- cout<<"\n Valore dell'integrale utilizzando il metodo dei Trapezi: \n";
 
   //get the start time
      	auto start_I = std::chrono::steady_clock::now();
@@ -108,7 +80,7 @@ void TrapeziDouble(double h,double a,double b,double n)
      //output
      cout <<"\n Tempo impiegato per il calcolo [s]: \t" << I_elapsed_time_ns / 1e9 << endl;
 
-}
+    }
 
 
 

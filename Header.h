@@ -1,27 +1,18 @@
 #pragma once
 
-
-
 using namespace std;
 
+    double f (double x);
 
-double f (double x);
+    void printByteSizes ();
 
+    void FloatDoubleDefault(int j);
 
-void printByteSizes ();
-//void printFloat ();
-//void printDouble ();
+    void RettangoliFloat(float h,float a,float b,float n);
+    void RettangoliDouble(double h,double a,double b,double n);
 
-void FloatDoubleDefault(int j);
+    void TrapeziFloat(float h,float a,float b,float n);
+    void TrapeziDouble(double h,double a,double b,double n);
 
-void RettangoliFloat(float h,float a,float b,float n);
-void RettangoliDouble(double h,double a,double b,double n);
-//void SommaRet(double h ,double a,int n);
-
-void TrapeziFloat(float h,float a,float b,float n);
-void TrapeziDouble(double h,double a,double b,double n);
-//void SommaTrap(double h, double a, int n);
-
-void SimpsonFloat(float h,float a,float b,float nSimp);
-void SimpsonDouble(double h,double a,double b,double nSimp);
-//void SommaSimp(double h, double a, int n);
+    void SimpsonFloat(float h,float a,float b,float nSimp);
+    void SimpsonDouble(double h,double a,double b,double nSimp);
