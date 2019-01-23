@@ -9,57 +9,40 @@
 using namespace std;
 
 
-float somma, sum4=0.0 ,sum2=0.0;
- int i;
-
- double soma, summ4=0.0 ,summ2=0.0;
- //int i;
 
   void SommaSimpFloat(float h, float a, float nSimp){
 
- /*float somma, sum4=0.0 ,sum2=0.0;
- int i;*/
+  float somma, sum4=0.0 ,sum2=0.0;
+ int i=0;
 
- for (i=1; i<nSimp; i+=2)
- sum4 += f(a + i*h) ; // Calcolo di f ( x ) e somma a sum4
+i=0;
+for(int cont=1;cont<=nSimp/2;cont++)
+{
 
- for (i = 2; i < nSimp; i += 2)
- sum2 += f(a + i*h) ; //Calcolo di f ( x ) e somma a sum2
+    somma+=(h/3)*(f(a+i*h)+4*f(a+(i+1)*h)+f(a+(i+2)*h));
 
- somma = (h /3)*(somma + 4*sum4 + 2*sum2) ;
+    i+=2;
 
-
- 	if(i==nSimp)
-	 cout<<"\n Somma totale : \t"<<somma;
-
-	else
-	 cout<<"\n Somma parziale : \t"<<somma;
-
+}
+cout<<"\n Somma totale: \t"<<somma;
 }
 
 
   void SommaSimpDouble(double h, double a, double nSimp){
 
-/* double somma, sum4=0.0 ,sum2=0.0;
- int i;*/
-
- for (i=1; i<nSimp; i+=2)
- summ4 += f(a + i*h) ; // Calcolo di f ( x ) e somma a sum4
+  double soma, summ4=0.0 ,summ2=0.0;
+ int i=0;
 
 
+for(int cont=1;cont<=nSimp/2;cont++)
+{
 
- for (int i = 2; i < nSimp; i += 2)
- summ2 += f(a+i*h) ; //Calcolo di f ( x ) e somma a sum2
+    soma+=(h/3)*(f(a+i*h)+4*f(a+(i+1)*h)+f(a+(i+2)*h));
 
- soma = (h /3)*(soma + 4*summ4 + 2*summ2) ;
+    i+=2;
 
-
- 	if(i==nSimp)
-	 cout<<"\n Somma totale : \t"<<soma;
-
-	else
-	 cout<<"\n Somma parziale : \t"<<soma;
-
+}
+cout<<"\n Somma totale: \t"<<soma;
 }
 
 

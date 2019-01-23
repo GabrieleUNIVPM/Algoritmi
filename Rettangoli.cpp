@@ -14,43 +14,21 @@ void SommaRetFloat(float h ,float a,float n){
 
 float somma;
 
- for (int i=0; i<n; i++)
-
- 	{
+ for (int i=0; i<n; i++){
  	somma +=h* (f (a+ i*h)) ; //Calcolo di f ( x ) e somma all'area
-
-
-	cout<<"\n Numero di intervalli utilizzati : \t"<<i+1;
-
- 	if(i+1<n)
-	 cout<<"\n Somma parziale : \t"<<somma;
-
-	else
-	 cout<<"\n Somma totale : \t"<<somma;
-
- 	}
-
+ }
+cout<<"\n Somma totale : \t"<<somma;
 }
 
 void SommaRetDouble(double h ,double a,double n){
 
 double somma;
 
- for (int i=0; i<n; i++)
-
- 	{
+ for (int i=0; i<n; i++){
  	somma +=h* (f (a+ i*h)) ; //Calcolo di f ( x ) e somma all'area
-
-
-	cout<<"\n Numero di intervalli utilizzati : \t"<<i+1;
-
- 	if(i+1<n)
-	 cout<<"\n Somma parziale : \t"<<somma;
-
-	else
-	 cout<<"\n Somma totale : \t"<<somma;
-
  	}
+
+cout<<"\n Somma totale : \t"<<somma;
 
 }
 

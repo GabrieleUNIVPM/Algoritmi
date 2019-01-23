@@ -16,7 +16,7 @@
 
 1535043515 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\retangoli.cpp
 
-1548066125 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\main.cpp
+1548067027 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\main.cpp
 	<iostream>
 	<string>
 	<math.h>
@@ -26,7 +26,7 @@
 	<chrono>
 	"Header.h"
 
-1548066119 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\rettangoli.cpp
+1548232510 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\rettangoli.cpp
 	<iostream>
 	<string>
 	<math.h>
@@ -36,13 +36,13 @@
 	<chrono>
 	"Header.h"
 
-1548066145 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\simpson.cpp
+1548232379 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\simpson.cpp
 	<iostream>
 	<math.h>
 	<chrono>
 	"Header.h"
 
-1548066119 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\trapezi.cpp
+1548232330 source:c:\users\gabriele\desktop\univpm - asus\triennale\materie\algoritmi\relazione\relazione-integrali\codice\trapezi.cpp
 	<iostream>
 	<string>
 	<math.h>

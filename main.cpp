@@ -70,13 +70,15 @@ int main(void){
  			hSimp=(b-a)/nSimp ;		//ampiezza degli intervalli
  			cout<<"\n Ampiezza di ciascun intervallo per il metodo di Simpson, calcolata tramite la formula h=(b-a)/n: \t"<<h;
 
-
+            cout<<"\n\n-------------------------------------------------------------------";
  			cout<<"\n\nIn esecuzione integrazione con IL METODO DEI RETTANGOLI a "<<j<<" cifre significative\n "<<endl;
 			RettangoliFloat(h,a,b,n);
 
+			cout<<"\n\n-------------------------------------------------------------------";
 			cout<<"\n\nIn esecuzione integrazione con IL METODO DEI TRAPEZI a "<<j<<" cifre significative\n "<<endl;
 			TrapeziFloat(h,a,b,n);
 
+			cout<<"\n\n-------------------------------------------------------------------";
 			cout<<"\n\nIn esecuzione integrazione con IL METODO DI SIMPSON a "<<j<<" cifre significative\n "<<endl;
 			SimpsonFloat(h,a,b,nSimp);
 
@@ -135,13 +137,15 @@ int main(void){
  			cout<<"\n Ampiezza di ciascun intervallo per il metodo di Simpson, calcolata tramite la formula h=(b-a)/n: \t"<<h;
 
 
-
+            cout<<"\n\n-------------------------------------------------------------------";
  			cout<<"\n\nIn esecuzione integrazione con IL METODO DEI RETTANGOLI a "<<j<<" cifre significative\n "<<endl;
 			RettangoliDouble(h,a,b,n);
 
+			cout<<"\n\n-------------------------------------------------------------------";
 			cout<<"\n\nIn esecuzione integrazione con IL METODO DEI TRAPEZI a "<<j<<" cifre significative\n "<<endl;
 			TrapeziDouble(h,a,b,n);
 
+			cout<<"\n\n-------------------------------------------------------------------";
 			cout<<"\n\nIn esecuzione integrazione con IL METODO DI SIMPSON a "<<j<<" cifre significative\n "<<endl;
 			SimpsonDouble(h,a,b,nSimp);
 

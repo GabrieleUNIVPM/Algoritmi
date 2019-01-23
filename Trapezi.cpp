@@ -15,23 +15,14 @@ using namespace std;
 
 void SommaTrapFloat(float h, float a, float n){
 
- float somma;
+ float somma=0;
 
- for (int i=1; i<=n; i++)
- {
- 	somma += h* (f (a+ i*h)) ; /* Calcolo di f ( x ) e somma all'area */
+for (int i=0; i<=n-1 ; i++){
 
-
- 	cout<<"\n Numero di intervalli esaminati : \t"<<i;
-
- 	if(i!=n)
-	 cout<<"\n Somma parziale : \t"<<somma;
-
-	else
-	 cout<<"\n Somma totale : \t"<<somma;
+ 	somma += h/2* (f (a+ i*h)+f(a+(i+1)*h)) ; // Calcolo di f ( x ) e somma all'area
 
  	}
-
+cout<<"\n Somma totale : \t"<<somma;
  }
 
 
@@ -39,23 +30,15 @@ void SommaTrapFloat(float h, float a, float n){
 
  void SommaTrapDouble(double h, double a, double n){
 
- double somma;
+ double somma=0;
 
- for (int i=1; i<=n; i++)
- {
- 	somma += h* (f (a+ i*h)) ; /* Calcolo di f ( x ) e somma all'area */
+ for (int i=0; i<=n-1 ; i++){
 
-
- 	cout<<"\n Numero di intervalli esaminati : \t"<<i;
-
- 	if(i!=n)
-	 cout<<"\n Somma parziale : \t"<<somma;
-
-	else
-	 cout<<"\n Somma totale : \t"<<somma;
+ 	somma += h/2* (f (a+ i*h)+f(a+(i+1)*h)) ; // Calcolo di f ( x ) e somma all'area
 
  	}
 
+cout<<"\n Somma totale : \t"<<somma;
  }
 
 
